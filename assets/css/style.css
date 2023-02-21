@@ -1,0 +1,123 @@
+@import url(./reset.css);
+
+body {
+    width: 100vw;
+    background: #F9F9F9;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0,0.1);
+    padding: 0 24px 0;
+    background-color: white;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CCCCCC;
+}
+
+#search-camp {
+    border: none;
+    height: 40px;
+    width: 348px;
+}
+
+#search-button {
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-left: 1px solid #CCCCCC;
+
+    background-image: url(../images/navbar/search-logo-nav.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+.description-content >  h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.description-content >  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.other-videos > img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.other-videos {
+    width: 282px;
+    height: 262px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.description {
+    display: flex;
+    gap: 16px;
+    height: 75px;
+    padding-top: 16px;
+}
+
+.description-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#other-videos {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    place-items: center;
+    row-gap: 47px;
+    padding: 47px 0;
+}
+
+aside {
+    background-color: white;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0,0.1);
+    border-top: 2px solid white;
+    display: grid;
+    grid-template: repeat(10, 25px) / 1fr;
+    gap: 24px;
+    padding: 24px 0 0 24px;
+
+    position: sticky;
+}
+
+img, input[type=button] {
+    cursor: pointer;
+}
